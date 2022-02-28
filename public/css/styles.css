@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.center{
+    @apply flex justify-center items-center
+}
+.numbers-container{
+    @apply h-32 w-20 border border-gray-400 rounded-lg overflow-hidden text-center
+}
+.numbers{
+    @apply text-6xl border-b border-gray-400 h-4/5 center font-semibold
+}
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy4uL3NyYy9jc3MvYXBwLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSIsImZpbGUiOiJzdHlsZXMuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiQHRhaWx3aW5kIGJhc2U7XHJcbkB0YWlsd2luZCBjb21wb25lbnRzO1xyXG5AdGFpbHdpbmQgdXRpbGl0aWVzO1xyXG5cclxuLmNlbnRlcntcclxuICAgIEBhcHBseSBmbGV4IGp1c3RpZnktY2VudGVyIGl0ZW1zLWNlbnRlclxyXG59XHJcbi5udW1iZXJzLWNvbnRhaW5lcntcclxuICAgIEBhcHBseSBoLTMyIHctMjAgYm9yZGVyIGJvcmRlci1ncmF5LTQwMCByb3VuZGVkLWxnIG92ZXJmbG93LWhpZGRlbiB0ZXh0LWNlbnRlclxyXG59XHJcbi5udW1iZXJze1xyXG4gICAgQGFwcGx5IHRleHQtNnhsIGJvcmRlci1iIGJvcmRlci1ncmF5LTQwMCBoLTQvNSBjZW50ZXIgZm9udC1zZW1pYm9sZFxyXG59Il19 */
