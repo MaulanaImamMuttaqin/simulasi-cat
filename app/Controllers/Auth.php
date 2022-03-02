@@ -17,7 +17,7 @@ class Auth extends BaseController
         if ($this->request->getMethod() == "get"){
             return view("operator/login");
         }
-
+        
         $username = $this->request->getVar('username');
 		$password = $this->request->getVar('password');
         $model = new ParticipantModel();

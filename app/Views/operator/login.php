@@ -13,7 +13,7 @@
     <div class="h-screen w-screen flex flex-col items-center justify-center ">
         
 
-        <div class="w-[400px] h-[500px] border border-gray-200 shadow-lg rounded-lg p-10 flex flex-col items-center justify-between gap-5 bg-gradient-to-tr from-fuchsia-500 to-purple-800">
+        <div class="w-[400px] h-[500px] border border-gray-200 shadow-lg rounded-lg p-10 flex flex-col items-center justify-between gap-5 bg-gradient-to-tr from-gray-800 to-gray-600">
             
             <div class="text-center font-thin  text-white ">
                 <div class="">
@@ -25,26 +25,21 @@
                 </div>
             </div>
             
-            <form class="w-full flex flex-col items-center" method="POST" action="<?= base_url('operator/login')?>">
+            <form class="w-full flex flex-col items-center" method="post" action="<?= base_url('operator/authenticate')?>">
                 <div class="relative z-0 mb-6 w-full group">
-                    <input type="text" name="user_id" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-400 appearance-none dark:text-white dark:border- dark:focus:border-white focus:outline-none focus:ring-0 focus:border-white peer" placeholder=" " required />
+                    <input type="text" name="username" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-400 appearance-none dark:text-white dark:border- dark:focus:border-white focus:outline-none focus:ring-0 focus:border-white peer" placeholder=" " required />
                     <label for="user_id" class="absolute text-sm text-white duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-white peer-focus:dark:text-white- peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Username</label>
                 </div>
                 <div class="relative z-0 mb-6 w-full group">
-                    <input type="text" name="token" id="token" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-400 appearance-none dark:text-white dark:border- dark:focus:border-white focus:outline-none focus:ring-0 focus:border-white peer" placeholder=" " required />
+                    <input type="password" name="password" id="token" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-400 appearance-none dark:text-white dark:border- dark:focus:border-white focus:outline-none focus:ring-0 focus:border-white peer" placeholder=" " required />
                     <label for="token" class="absolute text-sm text-white duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-white peer-focus:dark:text-white- peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Password</label>
                 </div>
                 
                 <div class="center">
-                    <button type="submit" class="text-fuchsia-500 text-center bg-white transition duration-300 hover:bg-gray-300 focus:ring-4 focus:ring-gray-200  rounded-full w-full sm:w-auto px-5 py-2.5 ">MASUK</button>
+                    <button type="submit" class="text-gray-500 text-center bg-white transition duration-300 hover:bg-gray-300 focus:ring-4 focus:ring-gray-200  rounded-full w-full sm:w-auto px-5 py-2.5 ">MASUK</button>
                 </div>
             </form>
             <div>
-                <?php if(session()->getFlashdata('msg')):?>
-                    <div class="alert alert-warning">
-                       <?= session()->getFlashdata('msg') ?>
-                    </div>
-                <?php endif;?>
             </div>
         </div>
 
